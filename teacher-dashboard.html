@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GanpatGang - Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2>GanpatGang Teacher Dashboard</h2>
+                <div class="header-actions">
+                    <button class="logout-btn" onclick="logout()">Logout</button>
+                </div>
+            </div>
+            <div class="upload-section">
+                <h3>Upload Study Materials</h3>
+                <div class="upload-options">
+                    <div class="upload-option">
+                        <h4>Upload Files</h4>
+                        <input type="file" id="fileInput" multiple>
+                        <button onclick="uploadFiles()">Upload Files</button>
+                    </div>
+                    <div class="upload-option">
+                        <h4>Upload Folder</h4>
+                        <input type="file" id="folderInput" webkitdirectory directory multiple>
+                        <button onclick="uploadFolder()">Upload Folder</button>
+                    </div>
+                </div>
+            </div>
+            <div class="file-container" id="fileContainer"></div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html> 

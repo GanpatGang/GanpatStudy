@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GanpatGang - Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2>GanpatGang Student Dashboard</h2>
+                <div class="header-actions">
+                    <button class="logout-btn" onclick="logout()">Logout</button>
+                </div>
+            </div>
+            <div class="dashboard-content">
+                <div class="files-section">
+                    <h3>Study Materials</h3>
+                    <div class="file-container" id="fileContainer"></div>
+                </div>
+                <div class="preview-section" id="previewSection">
+                    <div class="preview-header">
+                        <h3>Preview</h3>
+                    </div>
+                    <div class="preview-content" id="previewContent">
+                        <div class="no-preview-message">
+                            <div class="file-icon-large">📄</div>
+                            <h3>Select a file to preview</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html> 
